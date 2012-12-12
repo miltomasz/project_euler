@@ -17,20 +17,4 @@ while true
   start_number += 20
 end
 
-puts "#{result}"
-
-# i = 1
-
-# divisibles = []
-
-# (2..20).each do |x|
-#   y = 0
-#   while y <= 20 
-#     y += x
-#     puts "#{y}" 
-#   end
-#   puts "--"
-#   divisibles.push(y - x).sort! unless divisibles.include?(y - x)
-# end
-
-# puts "#{divisibles}"
+puts "Result: #{result}"

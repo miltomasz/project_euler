@@ -27,4 +27,4 @@ array_numbers.collect!{ |x| x.to_i }.each_with_index do |x, i|
   biggest_product = current if current > biggest_product
 end
 
-puts "Biggest product: #{biggest_product}"
+puts "Result: #{biggest_product}"

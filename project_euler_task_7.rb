@@ -16,4 +16,4 @@ while prime_numbers.length < 10001
   number += 1
 end
 
-puts "10001st prime number: #{prime_numbers.last}"
+puts "Result: #{prime_numbers.last}"

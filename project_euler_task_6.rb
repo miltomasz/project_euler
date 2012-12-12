@@ -8,4 +8,4 @@ while i < 100
   i += 1
 end 
 
-puts "#{diff}"
+puts "Result: #{diff}"

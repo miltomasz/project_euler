@@ -1,10 +1,10 @@
-def only_triplet_for_1000
-  1.upto(1000) do |a|
-    2.upto(1000) do |b|
-      c = 1000 - (a + b)
+def only_triplet_for(number)
+  1.upto(number) do |a|
+    2.upto(number) do |b|
+      c = number - (a + b)
       return a*b*c if c**2 == a**2 + b**2
     end
   end
 end
 
-puts "#{only_triplet_for_1000()}"
+puts "Result: #{only_triplet_for(1000)}"

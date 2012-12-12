@@ -17,11 +17,8 @@ result = 0
 999.downto(1) do |x|
   break if 999.downto(1) do |y|
     result = (x * y).to_s
-    
-    if palindrome?(result) && different_digits?(x, y) && three_digits?(x, y)
-      break
-    end
+    break if palindrome?(result) && different_digits?(x, y) && three_digits?(x, y)
   end == nil
 end
 
-puts "#{result}"
+puts "Result: #{result}"
