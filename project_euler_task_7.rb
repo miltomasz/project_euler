@@ -1,7 +1,7 @@
 def prime?(number)
   root = Math.sqrt(number)
   2.upto(root) do |n|
-  	return false if number % n == 0
+    return false if (number % n).zero?
   end
   true
 end
