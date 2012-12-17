@@ -1,7 +1,7 @@
 string_array = "08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08
-				        49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
- 				        81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
- 				        52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
+                49 49 99 40 17 81 18 57 60 87 17 40 98 43 69 48 04 56 62 00
+                81 49 31 73 55 79 14 29 93 71 40 67 53 88 30 03 49 13 36 65
+                52 70 95 23 04 60 11 42 69 24 68 56 01 32 56 71 37 02 36 91
 22 31 16 71 51 67 63 89 41 92 36 54 22 40 40 28 66 33 13 80
 24 47 32 60 99 03 45 02 44 75 33 53 78 36 84 20 35 17 12 50
 32 98 81 28 64 23 67 10 26 38 40 67 59 54 70 66 18 38 64 70
@@ -28,11 +28,11 @@ products = []
 
 array.each_with_index do |n, i|
   n.each_with_index do |m, j|
-  	begin
-  	  products << left_product = array[i][j] * array[i][j-1] * array[i][j-2] * array[i][j-3]
-  	  products << right_product = array[i][j] * array[i][j+1] * array[i][j+2] * array[i][j+3]
+    begin
+      products << left_product = array[i][j] * array[i][j-1] * array[i][j-2] * array[i][j-3]
+      products << right_product = array[i][j] * array[i][j+1] * array[i][j+2] * array[i][j+3]
       products << down_product = array[i][j] * array[i+1][j] * array[i+2][j] * array[i+3][j]
-  	  products << up_product = array[i][j] * array[i-1][j] * array[i-2][j] * array[i-3][j]
+      products << up_product = array[i][j] * array[i-1][j] * array[i-2][j] * array[i-3][j]
 
       products << left_up_product = array[i][j] * array[i-1][j-1] * array[i-2][j-2] * array[i-3][j-3]
       products << right_up_product = array[i][j] * array[i-1][j+1] * array[i-2][j+2] * array[i-3][j+3]
@@ -40,9 +40,9 @@ array.each_with_index do |n, i|
       products << right_down_product = array[i][j] * array[i+1][j+1] * array[i+2][j+2] * array[i+3][j+3]
 
       greatest_product = products.sort.last if products.sort.last > greatest_product
-  	rescue NoMethodError, TypeError
+    rescue NoMethodError, TypeError
       break
-  	end
+    end
   end
 end
 
