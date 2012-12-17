@@ -9,7 +9,9 @@ end
 sum = 0
 
 2.upto(2000000) do |n|
-  sum += n if prime?(n)
+  if n.odd?
+    sum += n if prime?(n)
+  end
 end
 
 puts "Result: #{sum}"
