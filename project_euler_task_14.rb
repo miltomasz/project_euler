@@ -11,7 +11,7 @@ starting_number = 0
   
   while number > 1 
     number = collatz(number)
-  	index += 1
+    index += 1
   end
 
   if index > sequence_length

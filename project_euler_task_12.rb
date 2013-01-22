@@ -6,13 +6,6 @@ def prime?(number)
   true
 end
 
-# pow = 1
-# begin pow += 1; end while 2**pow <= 500
-
-# number = 1
-# nine_primes = []
-# product = 1
-
 def prime_factors(number)
   factor = 2
   hash = Hash.new(0)
